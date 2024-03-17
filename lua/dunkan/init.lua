@@ -20,3 +20,4 @@ vim.opt.timeoutlen = 250
 -- vim.opt.ttimeoutlen = 0
 
 vim.g.netrw_banner = 0
+vim.g.netrw_liststyle = 3

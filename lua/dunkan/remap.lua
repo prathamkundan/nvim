@@ -1,7 +1,7 @@
 local opts = { noremap = true, silent = true }
 
 vim.g.mapleader = " "
-vim.keymap.set('n', "<leader>f", ":Lex 25 <CR>", opts)
+vim.keymap.set('n', "<C-b>", ":NvimTreeToggle <CR>", opts)
 
 -- Move lines
 vim.keymap.set("v", "<A-k>", ":m '<-2<CR>gv=gv", opts)
