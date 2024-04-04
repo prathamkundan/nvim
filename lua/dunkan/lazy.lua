@@ -27,9 +27,6 @@ local plugins = {
         "kylechui/nvim-surround",
         version = "*", -- Use for stability; omit to use `main` branch for the latest features
         event = "VeryLazy",
-        config = function()
-            require("nvim-surround").setup({})
-        end
     },
     { 'VonHeikemen/lsp-zero.nvim', branch = 'v3.x' },
     { 'neovim/nvim-lspconfig' },
