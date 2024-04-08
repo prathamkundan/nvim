@@ -16,8 +16,8 @@ vim.opt.swapfile = false
 vim.opt.backup = false
 
 vim.opt.termguicolors = true
-vim.opt.timeoutlen = 250
--- vim.opt.ttimeoutlen = 0
+vim.opt.timeoutlen = 500
+vim.opt.ttimeoutlen = 250
 
 vim.g.netrw_banner = 0
 vim.g.netrw_liststyle = 3
