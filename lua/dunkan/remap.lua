@@ -9,6 +9,8 @@ vim.keymap.set("v", "<A-j>", ":m '>+1<CR>gv=gv", opts)
 
 -- Yank and Pasting
 vim.keymap.set({"v", "n"}, "<leader>y", "\"+y", opts)
+vim.keymap.set({"v", "n"}, "<leader>p", "\"+p", opts)
+vim.keymap.set({"v", "n"}, "<leader>P", "\"+P", opts)
 vim.keymap.set("v", 'p', "\"_dP", opts)
 
 -- Some insert mode conveniences

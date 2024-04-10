@@ -18,20 +18,28 @@ local plugins = {
         tag = '0.1.5',
         dependencies = { 'nvim-lua/plenary.nvim' }
     },
-    { 'navarasu/onedark.nvim',            name = "one-dark" },
-    { "rose-pine/neovim",                 name = "rose-pine" },
-    { "nvim-treesitter/nvim-treesitter",  build = ":TSUpdate" },
-    { 'williamboman/mason.nvim' },
-    { 'williamboman/mason-lspconfig.nvim' },
+    { 'navarasu/onedark.nvim',           name = "one-dark" },
+    { "nvim-treesitter/nvim-treesitter", build = ":TSUpdate" },
+    {
+        'neovim/nvim-lspconfig',
+        dependencies = {
+            'williamboman/mason.nvim',
+            'williamboman/mason-lspconfig.nvim',
+            'WhoIsSethDaniel/mason-tool-installer.nvim',
+            { 'j-hui/fidget.nvim', opts = {} },
+            -- used for completion, annotations and signatures of Neovim apis
+            { 'folke/neodev.nvim', opts = {} },
+        }
+    },
     {
         "kylechui/nvim-surround",
         version = "*", -- Use for stability; omit to use `main` branch for the latest features
         event = "VeryLazy",
     },
-    { 'VonHeikemen/lsp-zero.nvim', branch = 'v3.x' },
-    { 'neovim/nvim-lspconfig' },
+    -- { 'VonHeikemen/lsp-zero.nvim', branch = 'v3.x' },
     { 'hrsh7th/cmp-nvim-lsp' },
     { 'hrsh7th/nvim-cmp' },
+    { 'hrsh7th/cmp-path'},
     { 'L3MON4D3/LuaSnip' },
     {
         "nvim-tree/nvim-tree.lua",
