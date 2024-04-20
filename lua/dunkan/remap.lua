@@ -31,5 +31,5 @@ vim.keymap.set("n", "<C-Up>", ":resize +2<CR>", opts)
 vim.keymap.set("n", "<C-Left>", ":vertical resize -2<CR>", opts)
 
 -- scrolling
-vim.keymap.set('n', '<C-j>', ':normal! 2j<CR><C-e><C-e>', opts)
-vim.keymap.set('n', '<C-k>', ':normal! 2k<CR><C-y><C-y>', opts)
+vim.keymap.set('n', '<C-j>', '2j<C-e><C-e>', opts)
+vim.keymap.set('n', '<C-k>', '2k<C-y><C-y>', opts)

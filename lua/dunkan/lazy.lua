@@ -26,7 +26,6 @@ local plugins = {
             'williamboman/mason.nvim',
             'williamboman/mason-lspconfig.nvim',
             'WhoIsSethDaniel/mason-tool-installer.nvim',
-            { 'j-hui/fidget.nvim', opts = {} },
             -- used for completion, annotations and signatures of Neovim apis
             { 'folke/neodev.nvim', opts = {} },
         }
@@ -39,7 +38,7 @@ local plugins = {
     -- { 'VonHeikemen/lsp-zero.nvim', branch = 'v3.x' },
     { 'hrsh7th/cmp-nvim-lsp' },
     { 'hrsh7th/nvim-cmp' },
-    { 'hrsh7th/cmp-path'},
+    { 'hrsh7th/cmp-path' },
     { 'L3MON4D3/LuaSnip' },
     {
         "nvim-tree/nvim-tree.lua",
@@ -50,6 +49,12 @@ local plugins = {
         },
     },
     { 'numToStr/Comment.nvim', opts = {} },
+    { 'tpope/vim-fugitive' },
+    {
+        'nvim-lualine/lualine.nvim',
+        dependencies = { 'nvim-tree/nvim-web-devicons', opt = true },
+        opts = {}
+    }
 }
 local opts = {}
 
