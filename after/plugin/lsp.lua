@@ -44,7 +44,7 @@ capabilities = vim.tbl_deep_extend('force', capabilities, require('cmp_nvim_lsp'
 
 local servers = {
     clangd = {},
-    -- gopls = {},
+    gopls = {},
     black = {},
     pyright = {
         settings = {
