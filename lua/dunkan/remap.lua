@@ -14,7 +14,7 @@ vim.keymap.set({"v", "n"}, "<leader>P", "\"+P", opts)
 vim.keymap.set("v", 'p', "\"_dP", opts)
 
 -- Some insert mode conveniences
-vim.keymap.set("i", "kj", "<Esc>", opts)
+vim.keymap.set({"i", "v"}, "kj", "<Esc>", opts)
 
 -- windows
 vim.keymap.set("n", "<leader>wj", "<C-w>j", opts)
