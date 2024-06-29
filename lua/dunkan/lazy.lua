@@ -18,7 +18,7 @@ local plugins = {
         tag = '0.1.5',
         dependencies = { 'nvim-lua/plenary.nvim' }
     },
-    { 'navarasu/onedark.nvim',           name = "one-dark" },
+    { "bluz71/vim-moonfly-colors",       name = "moonfly",   lazy = false, priority = 1000 },
     { "nvim-treesitter/nvim-treesitter", build = ":TSUpdate" },
     {
         'neovim/nvim-lspconfig',
