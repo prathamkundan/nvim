@@ -7,6 +7,9 @@ vim.keymap.set('n', "<C-b>", ":NvimTreeToggle <CR>", opts)
 vim.keymap.set("v", "<A-k>", ":m '<-2<CR>gv=gv", opts)
 vim.keymap.set("v", "<A-j>", ":m '>+1<CR>gv=gv", opts)
 
+-- Exit in terminal
+vim.keymap.set("t", '\\\\', '<C-\\><C-n>', { noremap = true, silent = true })
+
 -- Yank and Pasting
 vim.keymap.set({"v", "n"}, "<leader>y", "\"+y", opts)
 vim.keymap.set({"v", "n"}, "<leader>p", "\"+p", opts)

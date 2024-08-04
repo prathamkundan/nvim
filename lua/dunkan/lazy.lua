@@ -54,7 +54,8 @@ local plugins = {
         'nvim-lualine/lualine.nvim',
         dependencies = { 'nvim-tree/nvim-web-devicons', opt = true },
         opts = {}
-    }
+    },
+    { 'mfussenegger/nvim-jdtls' }
 }
 local opts = {}
 
