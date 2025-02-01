@@ -7,7 +7,7 @@ vim.api.nvim_create_autocmd('LspAttach', {
         end
         map('gd', require('telescope.builtin').lsp_definitions, '[G]oto [D]efinition')
         map('gr', require('telescope.builtin').lsp_references, '[G]oto [R]eferences')
-        map('gI', require('telescope.builtin').lsp_implementations, '[G]oto [I]mplementation')
+        map('gi', require('telescope.builtin').lsp_implementations, '[G]oto [I]mplementation')
         map('gl', vim.diagnostic.open_float, 'View Diagnostic')
         map('[d', vim.diagnostic.goto_prev, 'Go to prev diagnostic')
         map(']d', vim.diagnostic.goto_next, 'Go to next diagnostic')

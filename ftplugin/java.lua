@@ -5,7 +5,7 @@ local os_name
 local uname = vim.loop.os_uname().sysname
 if uname == "Linux" then
     os_name = "linux"
-elseif uname == "darwin" then
+elseif uname == "Darwin" then
     os_name = "mac"
 elseif uname:match("Windows") then
     os_name = "win32"
