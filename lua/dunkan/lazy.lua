@@ -1,7 +1,9 @@
-local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
+local nvim = vim
 
-if not vim.loop.fs_stat(lazypath) then
-    vim.fn.system({
+local lazypath = nvim.fn.stdpath("data") .. "/lazy/lazy.nvim"
+
+if not nvim.loop.fs_stat(lazypath) then
+    nvim.fn.system({
         "git",
         "clone",
         "--filter=blob:none",
@@ -10,7 +12,7 @@ if not vim.loop.fs_stat(lazypath) then
         lazypath,
     })
 end
-vim.opt.rtp:prepend(lazypath)
+nvim.opt.rtp:prepend(lazypath)
 
 local plugins = {
     {
@@ -27,7 +29,7 @@ local plugins = {
             'WhoIsSethDaniel/mason-tool-installer.nvim',
             -- used for completion, annotations and signatures of Neovim apis
             { 'folke/neodev.nvim', opts = {} },
-        }
+        },
     },
     {
         "kylechui/nvim-surround",
