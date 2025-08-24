@@ -67,6 +67,14 @@ local servers = {
 }
 
 -- Mason
+
+nvim.api.nvim_create_autocmd('FileType', {
+    pattern = 'java',
+    callback = function(args)
+        require "custom.jdtls.setup_jdtls".setup()
+    end
+})
+
 require('mason').setup()
 
 local ensure_installed = nvim.tbl_keys(servers or {})
@@ -94,10 +102,3 @@ require('mason-lspconfig').setup {
         end,
     },
 }
-
-nvim.api.nvim_create_autocmd('FileType', {
-    pattern = 'java',
-    callback = function(args)
-        require "custom.jdtls.setup_jdtls".setup()
-    end
-})
